@@ -5,7 +5,7 @@ import Icon from './Icon.vue'
 const components = [
   Button,
   Checkbox,
-  // Icon
+  Icon
 ]
 
 const install = function(Vue) {
@@ -22,7 +22,7 @@ export {
   install,
   Button,
   Checkbox,
-  // Icon
+  Icon
 }
 
 export default {
