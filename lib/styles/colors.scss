@@ -1,0 +1,49 @@
+.green-1 {
+  background: $green-1;
+}
+.green-2 {
+  background: $green-2;
+}
+.green-3 {
+  background: $green-3;
+
+}
+.blue-1 {
+  background: $blue-1;
+}
+.blue-2 {
+  background: $blue-2;
+}
+
+.white {
+  background: $white;
+}
+.border-white {
+  background: $border-white-1;
+}
+.bg-white {
+  background: $bg-white;
+}
+.bg {
+  background: $bg;
+}
+
+.text_default:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.text_primary {
+  color: $green-3;
+  &:hover {
+    color: darken($green-3, 20%);
+    text-decoration: underline;
+  }
+}
+.text_secondary {
+  color: $blue-3;
+  &:hover {
+    color: darken($blue-3, 20%);
+    text-decoration: underline;
+  }
+}

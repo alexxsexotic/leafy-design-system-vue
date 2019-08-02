@@ -1,0 +1,59 @@
+.btn {
+  white-space: nowrap;
+  text-align: center;
+  border: 2px solid transparent;
+  border-bottom-width: 3px;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  height: 40px;
+  padding: 0 15px;
+  font-weight: bold;
+  .right {
+    margin-right: 5px;
+  }
+}
+
+.btn_primary {
+  background: $green-2;
+  color: white;
+  i {
+    color: white;
+  }
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.btn_secondary {
+  background: $blue-2;
+  color: white;
+  i {
+    color: white;
+  }
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.btn_default {
+  border-color: $border-white-1;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.btn_outline {
+  border-color: $green-2;
+  color: $green-2;
+  &:hover {
+    background: $green-2;
+    color: white;
+  }
+}
+
+.btn-disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}

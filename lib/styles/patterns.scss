@@ -1,0 +1,30 @@
+.flex-col {
+  @include flex-col;
+}
+.inline {
+  display: flex;
+}
+
+.border_normal {
+  border: 1px solid $border-white-1
+}
+.border_thick {
+  border: 3px solid $border-white-2
+}
+
+.shadow_normal {
+  box-shadow: $shadow-normal
+}
+.shadow_thick {
+  box-shadow: $shadow-thick
+}
+
+.round_small {
+  border-radius: 4px;
+}
+.round_large {
+  border-radius: 8px;
+}
+.round {
+  border-radius: 50%;
+}

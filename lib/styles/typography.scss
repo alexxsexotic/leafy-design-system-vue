@@ -1,0 +1,26 @@
+h1,h2,h3,h4 {
+  font-weight: bold;
+}
+
+.text-size_large {
+	font-size: $text-size-large;
+}
+.text-size_medium{
+	font-size: $text-size-medium;
+}
+.text-size_small {
+  font-size: $text-size-small;
+}
+.text-size_label {
+  font-size: $text-size-label;
+}
+
+.text-weight_bold {
+  font-weight: 900;
+}
+.text-weight_medium {
+  font-weight: 600;
+}
+.text-weight_normal {
+  font-weight: 400;
+}
