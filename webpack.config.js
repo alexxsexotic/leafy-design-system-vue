@@ -25,6 +25,19 @@ module.exports = {
         }
       },
       {
+        test: /\.svg$/,
+        use: [{ 
+          loader: 'html-loader',
+          options: {
+            minimize: true,
+            attrs: ['i:v-html'],
+            removeComments: false,
+            collapseWhitespace: false,
+            removeAttributeQuotes: false,          
+          }
+        }]
+      },
+      {
         test: /\.scss$/,
         loader: 'vue-style-loader!css-loader!sass-loader',
       },
