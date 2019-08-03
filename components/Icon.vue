@@ -2,7 +2,7 @@
     <i 
       class="icon"
       :class="{ 'loading-motion' :loading }"
-      v-html="svgHtml"
+      v-html="icons.type"
     ></i>
 </template>
 
@@ -17,16 +17,23 @@ export default {
       type: Boolean
     },
   },
-  computed: {
-    svgHtml: function() {
-      let svgHtml = '';
-      try {
-        svgHtml = require(`!html-loader!./../lib/icons/outline/${this.type}.svg`)
-      } catch (err) {
-        console.warn('Unable to load this icon. Verify if it exists')
+  data() {
+    return {
+      icons: {
+        user: '<img svg-inline src="./../lib/icons/outline/user.svg"/>'
       }
-      return svgHtml
     }
-  }
+  },
+  // computed: {
+  //   svgHtml: function() {
+  //     let svgHtml = '';
+  //     try {
+  //       svgHtml = require(`!html-loader!./../lib/icons/outline/${this.type}.svg`)
+  //     } catch (err) {
+  //       console.warn('Unable to load this icon. Verify if it exists')
+  //     }
+  //     return svgHtml
+  //   }
+  // }
 };
 </script>
