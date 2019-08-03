@@ -16,21 +16,22 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        use: [
-          {
-            loader: 'vue-loader',
-            options: {
-              loaders: {
-                'scss': 'vue-style-loader!css-loader!sass-loader',
-                'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
-              }
-            }
-          },
-          {
-              loader: "vue-svg-inline-loader",
-              options: { /* ... */ }
+        loader: "vue-loader",
+        options: {
+          loaders: {
+            'scss': 'vue-style-loader!css-loader!sass-loader',
+            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
           }
-        ]
+        }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'vue-style-loader!css-loader!sass-loader',
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.svg$/,
@@ -44,15 +45,6 @@ module.exports = {
           }
         }]
       },
-      {
-        test: /\.scss$/,
-        loader: 'vue-style-loader!css-loader!sass-loader',
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      }
     ]
   },
   externals: {
