@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button class="btn btn_default" @click="$emit('clickEvent',1)">
     <i class="icon">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -17,7 +17,7 @@
         C318.115,0,375.068,22.126,419.404,58.936z"/>
       </svg>
     </i>
-    <p>Prihlasit pres google</p>
+    <p><slot></slot></p>
   </button>
 </template>
 

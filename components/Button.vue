@@ -27,6 +27,7 @@ export default {
   methods: {
     load: function() {
       this.loaded = false
+      return this.$emit('clickEvent',1)
     }
   }
 }
