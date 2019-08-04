@@ -1,11 +1,15 @@
 import Button from './Button.vue'
 import Checkbox from './Checkbox.vue'
 import Icon from './Icon.vue'
+import Google from './Google.vue'
+import Fb from './Fb.vue'
 
 const components = [
   Button,
   Checkbox,
-  Icon
+  Icon,
+  Google,
+  Fb
 ]
 
 const install = function(Vue) {
@@ -22,7 +26,9 @@ export {
   install,
   Button,
   Checkbox,
-  Icon
+  Icon,
+  Google,
+  Fb
 }
 
 export default {
