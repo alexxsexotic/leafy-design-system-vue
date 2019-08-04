@@ -5,6 +5,10 @@
   display: flex;
 }
 
+.stretch {
+  width: 100%;
+}
+
 .border_normal {
   border: 1px solid $border-white-1
 }

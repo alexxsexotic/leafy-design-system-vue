@@ -1,15 +1,6 @@
 <template>
-  <div id="app">
-    <h1>hi</h1>
-  </div>
+  <div id="app"></div>
 </template>
-
-<script>
-
-export default {
-  
-}
-</script>
 
 <style lang="scss">
 * {
