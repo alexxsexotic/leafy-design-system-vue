@@ -9,16 +9,12 @@
         v176h96V336h48L432,256z"/>
       </svg>
     </i>
-    <p><slot></slot></p>
+    <slot></slot>
   </button>
 </template>
 
 <style lang="scss" scoped>
 button {
   background: white;
-  p {
-    color: white;
-    margin-left: 15px;
-  }
 }
 </style>
