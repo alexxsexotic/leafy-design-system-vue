@@ -16,7 +16,9 @@
 <script>
 export default {
   props: {
-    link: String
+    link: {
+      type: String
+    }
   }
 }
 </script>

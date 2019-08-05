@@ -24,7 +24,9 @@
 <script>
 export default {
   props: {
-    link: string
+    link: {
+      type: String
+    }
   }
 }
 </script>
