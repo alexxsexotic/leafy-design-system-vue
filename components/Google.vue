@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-button {
+a {
   background: white;
   font-weight: normal;
   font-size: .9em;
