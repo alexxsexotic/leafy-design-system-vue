@@ -6,7 +6,6 @@
     <Icon 
       v-if="!loaded"
       type="loading" 
-      loading
       class="right"
     />
     <slot></slot>
@@ -17,13 +16,8 @@
 import Icon from './Icon.vue'
 
 export default {
-  props: ['type'],
+  props: ['type','loaded'],
   components: { Icon },
-  data() {
-    return {
-      loaded: true
-    }
-  },
   methods: {
     load: function() {
       return this.$emit('clickEvent',1)
