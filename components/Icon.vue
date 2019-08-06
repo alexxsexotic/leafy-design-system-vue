@@ -15,7 +15,7 @@ export default {
       default: ''
     },
     loading: {
-      type: Boolean
+      type: Boolean,
     },
   },
 };

@@ -7,7 +7,7 @@
       v-if="loaded"
       type="loading" 
       class="right"
-      loading="loaded"
+      loading
     />
     <slot></slot>
   </button>
