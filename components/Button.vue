@@ -1,7 +1,7 @@
 <template>
   <button 
     @click="load"
-    :class="{ 'btn-disabled' : !loaded }"
+    :class="{ 'btn-disabled' : loaded }"
   >
     <Icon 
       v-if="loaded"
