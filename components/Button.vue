@@ -4,7 +4,7 @@
     :class="{ 'btn-disabled' : !loaded }"
   >
     <Icon 
-      v-if="!loaded"
+      v-if="loaded"
       type="loading" 
       class="right"
     />
