@@ -28,5 +28,12 @@ a {
   background: white;
   font-weight: normal;
   font-size: .9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  margin-right: 10px
 }
 </style>
