@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  props: [ link ]
+  props: [ 'link' ]
 }
 </script>
 
