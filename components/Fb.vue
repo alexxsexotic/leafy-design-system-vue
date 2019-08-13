@@ -10,8 +10,8 @@
       </svg>
     </i>
     <slot></slot>
-  </router-link>
-</a>
+  </a>
+</template>
 
 <script>
 export default {
