@@ -12,7 +12,7 @@
   font-size: 1em;
   svg {
     display: inline-block;
-    fill: currentColor;
+    fill: inherit;
     height: 1em;
     width: 1em;
   }
@@ -38,6 +38,14 @@
     height: $icon-size_large;
     width: $icon-size_large;
   }
+}
+
+.light {
+  fill: white;
+}
+
+.dark {
+  fill: rgb(61, 61, 61);
 }
 
 .loading-motion {

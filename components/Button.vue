@@ -6,7 +6,7 @@
     <Icon 
       v-if="loaded"
       type="loading" 
-      class="right"
+      :class="[light ? 'right light' : 'right dark']"
       loading
     />
     <slot></slot>
@@ -17,7 +17,7 @@
 import Icon from './Icon.vue'
 
 export default {
-  props: ['loaded'],
+  props: ['loaded', 'light'],
   components: { Icon },
   methods: {
     load: function() {
