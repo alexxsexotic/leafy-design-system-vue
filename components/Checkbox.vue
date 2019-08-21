@@ -2,7 +2,7 @@
   <label 
     class="input-checkbox"
     @click.prevent="emitEvent"
-    :class="{ 'input-checked' : value }"
+    :class="{ 'input-checked' : checked }"
   >
     <span class="outer">
       <span></span>
@@ -14,14 +14,15 @@
 
 <script>
 export default {
-  data() {
-    return {
-      value: false
+  props: {
+    checked: {
+      type: Boolean,
+      default: false,
     }
   },
   methods: {
     emitEvent() {
-      this.value = !this.value
+      this.checked = !this.checked
       return this.$emit('change', this.value)
     }
   }
