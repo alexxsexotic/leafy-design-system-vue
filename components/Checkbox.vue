@@ -8,7 +8,7 @@
       <span></span>
       <input type="checkbox">
     </span>
-    <div style="display: inline-block"><slot style="margin-right: 10px"></slot></div>
+    <div style="display: inline-block"><slot style="margin-left: 10px"></slot></div>
   </label>
 </template>
 
