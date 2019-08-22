@@ -90,12 +90,16 @@
     background: white;
     appearance: none;
     cursor: pointer;
+    padding-right: 30px;
   }
   i {
-    color: grey;
     position: absolute; 
-    right: 5px;
+    right: 10px;
+    top: 35%;
     padding: 12px;
+    svg {
+      fill: grey;
+    }
   }
 }
 
