@@ -25,6 +25,11 @@ export default {
       default: false,
     }
   },
+  watch: {
+    checked(val) {
+      this.value = val
+    }
+  },
   methods: {
     emitEvent() {
       this.value = !this.value
