@@ -6,11 +6,12 @@ const TerserPlugin = require('terser-webpack-plugin')
 module.exports = {
   entry: path.resolve(__dirname + '/components/index.js'),
   output: {
-    path: path.resolve(__dirname + '/dist/'),
-    publicPath: '/dist/',
-    filename: 'index.js',
     library:'leafy-design-system',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'umd',
+    filename: 'index.js',
+    publicPath: '/dist/',
+    path: path.resolve(__dirname + '/dist/'),
+    globalObject: 'this'
   },
   module: {
     rules: [
