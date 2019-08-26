@@ -1,3 +1,6 @@
+
+'use strict';
+
 import Button from './Button.vue'
 import Checkbox from './Checkbox.vue'
 import Icon from './Icon.vue'
@@ -12,15 +15,15 @@ const components = [
   Fb
 ]
 
-const install = function(Vue) {
+const install = (Vue) => {
   components.map(component => {
     Vue.use(component)
   })
 }
 
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
-}
+// if (typeof window !== 'undefined' && window.Vue) {
+//   install(window.Vue);
+// }
 
 export {
   install,
