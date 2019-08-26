@@ -8,7 +8,9 @@ import Google from './Google.vue'
 import Fb from './Fb.vue'
 
 const components = [
+  Button,
   Checkbox,
+  Icon,
   Google,
   Fb
 ]
