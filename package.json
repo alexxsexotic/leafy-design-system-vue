@@ -1,6 +1,6 @@
 {
   "name": "leafy-design-system",
-  "version": "0.0.68",
+  "version": "0.0.69",
   "title": "Leafy Design system",
   "description": "Leafy Design system based on Stripe, Shopify and Antdesign",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "author": "alexsexotic <alexnguyen98@yahoo.com>",
   "license": "MIT",
-  "main": "components/index.js",
+  "main": "dist/index.js",
   "unpkg": "dist/simplealertcomponent.min.js",
   "files": [
     "dist/*",

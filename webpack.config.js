@@ -10,7 +10,8 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'index.js',
     library:'leafy-design-system',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
   module: {
     rules: [
