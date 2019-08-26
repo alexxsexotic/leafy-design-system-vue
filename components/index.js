@@ -8,9 +8,7 @@ import Google from './Google.vue'
 import Fb from './Fb.vue'
 
 const components = [
-  Button,
   Checkbox,
-  Icon,
   Google,
   Fb
 ]
@@ -27,9 +25,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   install,
-  Button,
   Checkbox,
-  Icon,
   Google,
   Fb
 }
