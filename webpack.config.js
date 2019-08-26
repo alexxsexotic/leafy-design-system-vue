@@ -2,16 +2,17 @@ const webpack = require('webpack')
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const TerserPlugin = require('terser-webpack-plugin');
+const { VueSSRServerPlugin } = require('vue-ssr-webpack-plugin')
 
 module.exports = {
+  target: 'node',
   entry: path.resolve(__dirname + '/components/index.js'),
   output: {
     path: path.resolve(__dirname + '/dist/'),
     publicPath: '/dist/',
     filename: 'index.js',
     library:'leafy-design-system',
-    libraryTarget: 'umd',
-    globalObject: 'this'
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
@@ -68,6 +69,7 @@ module.exports = {
     minimizer: [new TerserPlugin()],
   },
   plugins: [
+    new VueSSRServerPlugin(),
     new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
