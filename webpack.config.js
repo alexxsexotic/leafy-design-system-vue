@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname + '/components/index.js'),
@@ -10,7 +10,7 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'index.js',
     library:'leafy-design-system',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [

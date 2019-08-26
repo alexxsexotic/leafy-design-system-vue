@@ -25,7 +25,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   install,
+  Button,
   Checkbox,
+  Icon,
   Google,
   Fb
 }
