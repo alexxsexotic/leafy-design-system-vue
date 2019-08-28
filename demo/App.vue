@@ -1,6 +1,10 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <h1>hi</h1>
+  </div>
 </template>
+
+<script>
 
 <style lang="scss">
 * {

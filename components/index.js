@@ -1,23 +1,23 @@
 
 'use strict';
 
-import Button from './Button.vue'
-import Checkbox from './Checkbox.vue'
-import Icon from './Icon.vue'
-import Google from './Google.vue'
-import Fb from './Fb.vue'
+import Icon from './icon'
+// import Button from './Button.vue'
+// import Checkbox from './Checkbox.vue'
+// import Google from './Google.vue'
+// import Fb from './Fb.vue'
 
 const components = [
-  Button,
-  Checkbox,
   Icon,
-  Google,
-  Fb
+  // Button,
+  // Checkbox,
+  // Google,
+  // Fb
 ]
 
 const install = (Vue) => {
   components.map(component => {
-    Vue.use(component)
+    Vue.use(component.name, component)
   })
 }
 
@@ -27,11 +27,11 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   install,
-  Button,
-  Checkbox,
   Icon,
-  Google,
-  Fb
+  // Button,
+  // Checkbox,
+  // Google,
+  // Fb
 }
 
 export default {

@@ -1,18 +1,17 @@
 <template>
-    <i 
+    <i
       class="icon"
-      :class="{ 'loading-motion' :loading }"
-      v-html="require('!html-loader!./../lib/icons/'+ type +'.svg')"
+      :class="[{'loading-motion' : loading}, 'l-' + name]"
     >
     </i>
 </template>
 
 <script>
 export default {
+  name: 'LIcon',
   props: {
-    type: {
+    name: {
       type: String,
-      default: ''
     },
     loading: {
       type: Boolean,
