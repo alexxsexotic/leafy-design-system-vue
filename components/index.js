@@ -1,18 +1,18 @@
 
 'use strict';
 
-import Icon from './icon'
-import Button from './button'
-import Checkbox from './checkbox'
-import Google from './google-icon'
-import Fb from './fb-icon'
+import LIcon from './icon'
+import LButton from './button'
+import LCheckbox from './checkbox'
+import LGoogle from './google-icon'
+import LFb from './fb-icon'
 
 const components = [
-  Icon,
-  Button,
-  Checkbox,
-  Google,
-  Fb
+  LIcon,
+  LButton,
+  LCheckbox,
+  LGoogle,
+  LFb
 ]
 
 const install = (Vue) => {
@@ -25,15 +25,12 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-export {
-  install,
-  Icon,
-  Button,
-  Checkbox,
-  Google,
-  Fb
-}
 
 export default {
-  install
+  install,
+  LIcon,
+  LButton,
+  LCheckbox,
+  LGoogle,
+  LFb
 }
