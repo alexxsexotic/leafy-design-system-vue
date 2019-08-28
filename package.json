@@ -1,6 +1,6 @@
 {
   "name": "leafy-design-system",
-  "version": "0.0.77",
+  "version": "0.0.78",
   "title": "Leafy Design system",
   "description": "Leafy Design system based on Stripe, Shopify and Antdesign",
   "keywords": [
@@ -28,7 +28,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js --mode development --open --hot",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js --mode production --progress --hide-modules",
     "release": "standard-version",
-    "pre:publish": "npm run build && npm release",
+    "pre:publish": "npm run build && npm run release",
     "publish": "git push origin master && npm publish"
   },
   "dependencies": {
