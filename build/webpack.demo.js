@@ -1,11 +1,11 @@
 'use strict'
+
 const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
-  entry: './demo/main.js',
+  entry: './demo',
   output: {
 		path: __dirname + "./demo/dist",
 		filename: "build.js"
@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   resolve: {
-    extensions: ['*', '.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
