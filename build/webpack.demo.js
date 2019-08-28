@@ -5,12 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: [
-    './demo/index.js'
-  ],
+  entry: './demo/main.js',
   output: {
 		path: __dirname + "./demo/dist",
-		filename: "index.js"
+		filename: "build.js"
 	},
   devServer: {
     hot: true,
@@ -19,7 +17,7 @@ module.exports = {
     }
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['*', '.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
@@ -48,6 +46,10 @@ module.exports = {
       {
         test: /\.js$/,
         use: 'babel-loader'
+      },
+      {
+        test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+        loader: 'url-loader',
       }
     ]
   },
@@ -55,8 +57,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      filename: './demo/index.html',
-      template: './demo/index.html',
+      filename: 'index.html',
+      template: "./demo/index.html",
       inject: true
     })
   ]

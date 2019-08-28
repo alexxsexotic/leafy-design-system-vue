@@ -38,9 +38,7 @@
     border: 2px solid $border-white-2;
     margin-right: -2px;
     background: $bg-white;
-    svg {
-      fill: $grey;
-    }
+    color: $grey;
   }
 }
 
@@ -96,9 +94,7 @@
     position: absolute; 
     right: 10px;
     top: 35%;
-    svg {
-      fill: grey;
-    }
+    color: grey;
   }
 }
 
@@ -135,7 +131,7 @@
       &:after {
         position: absolute;
         top: 51%;
-        left: 20%;
+        left: 19%;
         display: table;
         width: 4px;
         height: 8px;

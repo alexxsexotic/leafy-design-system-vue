@@ -5,7 +5,7 @@
   >
     <Icon 
       v-if="loaded"
-      type="loading" 
+      name="loading" 
       :class="[light ? 'right light' : 'right dark']"
       loading
     />
@@ -14,9 +14,10 @@
 </template>
 
 <script>
-import Icon from './Icon.vue'
+import Icon from '../icon'
 
 export default {
+  name: 'LButton',
   props: ['loaded', 'light'],
   components: { Icon },
   methods: {

@@ -9,7 +9,7 @@
       <input type="checkbox">
     </span>
     <div style="display: inline-block">
-      <p style="margin-left: 10px">
+      <p style="margin-left: 5px">
         <slot></slot>
       </p>
     </div>
@@ -18,6 +18,7 @@
 
 <script>
 export default {
+  name: 'LCheckbox',
   data() {
     return {
       value: this.checked

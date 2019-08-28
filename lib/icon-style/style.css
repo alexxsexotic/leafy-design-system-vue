@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'leafy-icon';
+  src:  url('fonts/leafy-icon.eot?ow73ii');
+  src:  url('fonts/leafy-icon.eot?ow73ii#iefix') format('embedded-opentype'),
+    url('fonts/leafy-icon.ttf?ow73ii') format('truetype'),
+    url('fonts/leafy-icon.woff?ow73ii') format('woff'),
+    url('fonts/leafy-icon.svg?ow73ii#leafy-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="l-"], [class*=" l-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'leafy-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.l-fb-color .path1:before {
+  content: "\e92a";
+  color: rgb(25, 118, 210);
+}
+.l-fb-color .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+.l-google-color .path1:before {
+  content: "\e92c";
+  color: rgb(251, 187, 0);
+}
+.l-google-color .path2:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(81, 142, 248);
+}
+.l-google-color .path3:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(40, 180, 70);
+}
+.l-google-color .path4:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(241, 67, 54);
+}
+.l-alert:before {
+  content: "\e900";
+}
+.l-arrow-left:before {
+  content: "\e901";
+}
+.l-barcode:before {
+  content: "\e902";
+}
+.l-bell:before {
+  content: "\e903";
+}
+.l-book:before {
+  content: "\e904";
+}
+.l-calendar:before {
+  content: "\e905";
+}
+.l-caret-down:before {
+  content: "\e906";
+}
+.l-carry-out:before {
+  content: "\e907";
+}
+.l-check-circle:before {
+  content: "\e908";
+}
+.l-clock-circle:before {
+  content: "\e909";
+}
+.l-contacts:before {
+  content: "\e90a";
+}
+.l-delete:before {
+  content: "\e90b";
+}
+.l-environment:before {
+  content: "\e90c";
+}
+.l-facebook:before {
+  content: "\e90d";
+}
+.l-form:before {
+  content: "\e90e";
+}
+.l-gift:before {
+  content: "\e90f";
+}
+.l-google-plus:before {
+  content: "\e910";
+}
+.l-google:before {
+  content: "\e911";
+}
+.l-home:before {
+  content: "\e912";
+}
+.l-inbox:before {
+  content: "\e913";
+}
+.l-info-circle:before {
+  content: "\e914";
+}
+.l-loading:before {
+  content: "\e915";
+}
+.l-lock:before {
+  content: "\e916";
+}
+.l-logout:before {
+  content: "\e917";
+}
+.l-mail:before {
+  content: "\e918";
+}
+.l-menu:before {
+  content: "\e919";
+}
+.l-message:before {
+  content: "\e91a";
+}
+.l-qrcode:before {
+  content: "\e91b";
+}
+.l-question-circle:before {
+  content: "\e91c";
+}
+.l-question:before {
+  content: "\e91d";
+}
+.l-safety:before {
+  content: "\e91e";
+}
+.l-scan:before {
+  content: "\e91f";
+}
+.l-search:before {
+  content: "\e920";
+}
+.l-share-alt:before {
+  content: "\e921";
+}
+.l-shop:before {
+  content: "\e922";
+}
+.l-shopping-cart:before {
+  content: "\e923";
+}
+.l-star:before {
+  content: "\e924";
+}
+.l-team:before {
+  content: "\e925";
+}
+.l-user-add:before {
+  content: "\e926";
+}
+.l-user-delete:before {
+  content: "\e927";
+}
+.l-user:before {
+  content: "\e928";
+}
+.l-warning:before {
+  content: "\e929";
+}
