@@ -4,6 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: './components',
@@ -43,8 +44,8 @@ module.exports = {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', },
-          { loader: 'sass-loader', }
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } }
         ]
       },
       {
@@ -61,7 +62,6 @@ module.exports = {
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: "style.css",
-      chunkFilename: "[name].css"
     })
   ],
   optimization: {
@@ -77,7 +77,8 @@ module.exports = {
             comments: false
           }
         }
-      })
+      }),
+      new OptimizeCSSAssetsPlugin({})
     ]
   },
 }
