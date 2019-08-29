@@ -1,6 +1,6 @@
 {
   "name": "leafy-design-system",
-  "version": "0.0.80",
+  "version": "0.0.81",
   "title": "Leafy Design system",
   "description": "Leafy Design system based on Stripe, Shopify and Antdesign",
   "keywords": [
@@ -28,8 +28,10 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js --mode development --open --hot",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js --mode production --progress --hide-modules",
     "release": "standard-version",
-    "pre:publish": "npm run build && npm run release",
-    "publish": "git push origin master && npm publish"
+    "pre:publish": "npm run build && npm run gulp:style && npm run release",
+    "publish": "git push origin master && npm publish",
+    "gulp:style": "gulp style --gulpfile build/gulpfile.js",
+    "gulp:font": "gulp font --gulpfile build/gulpfile.js"
   },
   "dependencies": {
     "vue": "^2.6.10"
@@ -42,7 +44,13 @@
     "cross-env": "^5.2.0",
     "css-loader": "^3.1.0",
     "file-loader": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "merge-stream": "^2.0.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
