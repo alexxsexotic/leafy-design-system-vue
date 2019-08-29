@@ -1,10 +1,9 @@
 'use strict'
 
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: './components',
@@ -61,8 +60,8 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: "style.css",
-    })
+      filename: "bundle.css",
+    }),
   ],
   optimization: {
     splitChunks: {
@@ -78,7 +77,6 @@ module.exports = {
           }
         }
       }),
-      new OptimizeCSSAssetsPlugin({})
     ]
   },
 }

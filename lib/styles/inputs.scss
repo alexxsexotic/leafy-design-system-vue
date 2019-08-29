@@ -99,7 +99,7 @@
 }
 
 .input-checkbox {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   top: -0.09em;
   display: inline-block;
@@ -108,7 +108,7 @@
   outline: none;
   cursor: pointer;
   span {
-    font-size: 14px;
+    font-size: 16px;
     list-style: none;
     position: relative;
     top: -0.09em;
@@ -122,20 +122,20 @@
       top: 0;
       left: 0;
       display: block;
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       background-color: #fff;
-      border: 2px solid $border-white-1;
+      border: 3px solid $border-white-3;
       border-collapse: separate;
       transition: all .3s;
       &:after {
         position: absolute;
         top: 51%;
-        left: 19%;
+        left: 15%;
         display: table;
-        width: 4px;
-        height: 8px;
-        border: 2px solid #fff;
+        width: 5px;
+        height: 10px;
+        border: 4px solid #fff;
         border-top: 0;
         border-left: 0;
         transform: rotate(45deg) scale(0) translate(-50%, -50%);
