@@ -10,7 +10,8 @@ const
 const
   sassSrc = '../lib/styles/style.scss',
   bundleSrc = '../dist/bundle.css',
-  fontSrc = '../lib/icon-style/fonts/*.*',
+  fontAssetsSrc = '../lib/icon-style/fonts/*.*',
+  fontSrc = '../lib/icon-style/style.css',
   dist = '../dist'
 
 gulp.task('style', function() {
@@ -33,6 +34,6 @@ gulp.task('style', function() {
 }) 
 
 gulp.task('font', function() {
-  return gulp.src(fontSrc)
+  return gulp.src(fontAssetsSrc)
     .pipe(gulp.dest('../dist/fonts/'))
 })

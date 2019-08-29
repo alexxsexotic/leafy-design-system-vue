@@ -29,9 +29,10 @@
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js --mode production --progress --hide-modules",
     "release": "standard-version",
     "pre:publish": "npm run build && npm run gulp:style && npm run release",
-    "publish": "git push origin master && npm publish",
+    "publish": "npm run lazygit && npm publish",
     "gulp:style": "gulp style --gulpfile build/gulpfile.js",
-    "gulp:font": "gulp font --gulpfile build/gulpfile.js"
+    "gulp:font": "gulp font --gulpfile build/gulpfile.js",
+    "lazygit": "git add. && git commit -a -m '$1' && git push"
   },
   "dependencies": {
     "vue": "^2.6.10"

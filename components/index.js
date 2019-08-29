@@ -17,7 +17,7 @@ const components = [
 
 const install = (Vue) => {
   components.map(component => {
-    Vue.use(component.name, component)
+    Vue.component(component.name, component)
   })
 }
 
@@ -25,12 +25,12 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-
-export default {
-  install,
+export{
   LIcon,
   LButton,
   LCheckbox,
   LGoogle,
   LFb
 }
+
+export default install
