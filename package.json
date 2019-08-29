@@ -32,7 +32,7 @@
     "publish": "npm run lazygit && npm publish",
     "gulp:style": "gulp style --gulpfile build/gulpfile.js",
     "gulp:font": "gulp font --gulpfile build/gulpfile.js",
-    "lazygit": "git add. && git commit -a -m '$1' && git push"
+    "lazygit": "git add . && git commit -a -m '$1' && git push"
   },
   "dependencies": {
     "vue": "^2.6.10"
