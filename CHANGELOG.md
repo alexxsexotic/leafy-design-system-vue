@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.84](https://github.com/alexxsexotic/leafy-design-system/compare/v0.0.83...v0.0.84) (2019-08-31)
+
 ### [0.0.83](https://github.com/alexxsexotic/leafy-design-system/compare/v0.0.81...v0.0.83) (2019-08-29)
 
 ### [0.0.81](https://github.com/alexxsexotic/leafy-design-system/compare/v0.0.80...v0.0.81) (2019-08-29)
