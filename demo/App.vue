@@ -27,7 +27,7 @@
 <style lang="scss">
 * {
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
