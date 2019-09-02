@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'leafy-icon';
-  src:  url('fonts/leafy-icon.eot?2gpsfk');
-  src:  url('fonts/leafy-icon.eot?2gpsfk#iefix') format('embedded-opentype'),
-    url('fonts/leafy-icon.ttf?2gpsfk') format('truetype'),
-    url('fonts/leafy-icon.woff?2gpsfk') format('woff'),
-    url('fonts/leafy-icon.svg?2gpsfk#leafy-icon') format('svg');
+  src:  url('fonts/leafy-icon.eot?kmawpw');
+  src:  url('fonts/leafy-icon.eot?kmawpw#iefix') format('embedded-opentype'),
+    url('fonts/leafy-icon.ttf?kmawpw') format('truetype'),
+    url('fonts/leafy-icon.woff?kmawpw') format('woff'),
+    url('fonts/leafy-icon.svg?kmawpw#leafy-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.l-down:before {
+  content: "\e933";
+}
+.l-heart:before {
+  content: "\e934";
+}
+.l-schedule:before {
+  content: "\e935";
+}
 .l-phone:before {
   content: "\e932";
 }
