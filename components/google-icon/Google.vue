@@ -1,5 +1,8 @@
 <template>
-  <a class="btn btn_default" :href="link">
+  <button
+    @click="$emit('clickEvenet',1)"
+    class="btn btn_default"
+  >
     <i class="icon l-google-color">
       <span class="path1"></span>
       <span class="path2"></span>
@@ -7,16 +10,12 @@
       <span class="path4"></span>
     </i>
     <slot></slot>
-  </a>
+  </button>
 </template>
 
 <script>
-import Icon from '../icon'
-
 export default {
   name: 'LGoogle',
-  props: [ 'link' ],
-  components: { Icon }
 }
 </script>
 
@@ -25,16 +24,12 @@ export default {
   font-family: inherit;
 }
 
-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+button {
   background: white;
   font-weight: normal;
-  font-size: .9em;
 }
 
-/deep/ i {
+i {
   margin-right: 10px
 }
 </style>
