@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="$emit('clickEvenet',1)"
+    @click="$emit('clickEvent',1)"
     class="btn btn_default"
   >
     <i class="icon l-fb-color">
